@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Menu</title>
+  <script src="rj_script.js"></script>
+  <link rel="stylesheet" href="rj_style.css">
+</head>
+<body>
+    <header>
+        <h1>Indian</h1>
+    </header>
+
+  
+  <div id="menu">
+    <div class="menu-item">
+      <span>Samosa</span>
+      <span>$4.99</span>
+      <button onclick="addItem('Samosa', 4.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+      <span>Butter Chicken</span>
+      <span>$13.99</span>
+      <button onclick="addItem('Butter Chicken', 13.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+      <span>Paneer Tikka</span>
+      <span>$10.99</span>
+      <button onclick="addItem('Paneer Tikka', 10.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+        <span>Rogan Josh</span>
+        <span>$14.99</span>
+        <button onclick="addItem('Rogan Josh', 14.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Dosa</span>
+        <span>$9.99</span>
+        <button onclick="addItem('Dosa', 9.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Chole Bhature</span>
+        <span>$11.99</span>
+        <button onclick="addItem('Chole Bhature', 11.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Biryani</span>
+        <span>$12.99</span>
+        <button onclick="addItem('Biryani', 12.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Palak Paneer</span>
+        <span>$10.99</span>
+        <button onclick="addItem('Palak Paneer', 10.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Gulab Jamun</span>
+        <span>$6.99</span>
+        <button onclick="addItem('Gulab Jamun', 6.99)">Add</button>
+      </div>
+  </div>
+  
+  <div class="order">
+    <h2>Order</h2>
+    <div id="order-list"></div>
+    <div class="total" id="total"></div>
+  </div>
+</body>
+</html>

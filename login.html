@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		
+        header {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        }
+  
+        h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+		.log{
+			text-align: center;
+		}
+		#btn{
+			background-color: black;
+			color: #fff;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>RJ HOTEL</h1>
+	</header>
+	,<div class="log">
+	<h2>Login Form</h2>
+	<form action="login.php" method="POST">
+		<label>Email:</label>
+		<input type="email" name="email" required><br><br>
+		<label>Password:</label>
+		<input type="password" name="password" required><br><br>
+		<input type="submit" name="login" id="btn" value="Login">
+	</form>
+	<p>New User? <a href="register.html">Register Here</a></p></div>
+</body>
+</html>

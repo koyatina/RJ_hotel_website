@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Menu</title>
+  <script src="rj_script.js"></script>
+  <link rel="stylesheet" href="rj_style.css">
+</head>
+<body>
+    <header>
+        <h1>Korean</h1>
+    </header>
+
+  
+  <div id="menu">
+    <div class="menu-item">
+      <span>Bibimbap</span>
+      <span>$9.99</span>
+      <button onclick="addItem('Bibimbap', 9.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+      <span>Kimchi Jjigae</span>
+      <span>$11.99</span>
+      <button onclick="addItem('Kimchi Jjigae', 11.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+      <span>Bulgogi</span>
+      <span>$14.99</span>
+      <button onclick="addItem('Bulgogi', 14.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+        <span>Japchae</span>
+        <span>$12.99</span>
+        <button onclick="addItem('Japchae', 12.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Tteokbokki</span>
+        <span>$8.99</span>
+        <button onclick="addItem('Tteokbokki', 8.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Kimchi Fried Rice</span>
+        <span>$10.99</span>
+        <button onclick="addItem('Kimchi Fried Rice', 10.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Jjajangmyeon</span>
+        <span>$9.99</span>
+        <button onclick="addItem('Jjajangmyeon', 9.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Gimbap</span>
+        <span>$7.99</span>
+        <button onclick="addItem('Gimbap', 7.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Samgyeopsal</span>
+        <span>$13.99</span>
+        <button onclick="addItem('Samgyeopsal', 13.99)">Add</button>
+      </div>
+  </div>
+  
+  <div class="order">
+    <h2>Order</h2>
+    <div id="order-list"></div>
+    <div class="total" id="total"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Menu</title>
+  <script src="rj_script.js"></script>
+  <link rel="stylesheet" href="rj_style.css">
+</head>
+<body>
+    <header>
+        <h1>American</h1>
+    </header>
+
+  
+  <div id="menu">
+    <div class="menu-item">
+      <span>Hamburger</span>
+      <span>$5.99</span>
+      <button onclick="addItem('Hamburger', 5.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+      <span>Chicken Wings</span>
+      <span>$10.99</span>
+      <button onclick="addItem('Chicken Wings', 10.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+      <span>Steak</span>
+      <span>$12.99</span>
+      <button onclick="addItem('Steak', 12.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+        <span>Caesar Salad</span>
+        <span>$8.99</span>
+        <button onclick="addItem('Caesar Salad', 8.99)">Add</button>
+    </div>
+      
+    <div class="menu-item">
+        <span>Mac and Cheese</span>
+        <span>$9.99</span>
+        <button onclick="addItem('Mac and Cheese', 9.99)">Add</button>
+    </div>
+      
+    <div class="menu-item">
+        <span>BBQ Ribs</span>
+        <span>$14.99</span>
+        <button onclick="addItem('BBQ Ribs', 14.99)">Add</button>
+    </div>
+      
+    <div class="menu-item">
+        <span>Chicken Fried Steak</span>
+        <span>$11.99</span>
+        <button onclick="addItem('Chicken Fried Steak', 11.99)">Add</button>
+    </div>
+      
+    <div class="menu-item">
+        <span>Clam Chowder</span>
+        <span>$8.99</span>
+        <button onclick="addItem('Clam Chowder', 8.99)">Add</button>
+    </div>
+      
+    <div class="menu-item">
+        <span>Buffalo Wings</span>
+        <span>$10.99</span>
+        <button onclick="addItem('Buffalo Wings', 10.99)">Add</button>
+    </div>
+  </div>
+  
+  <div class="order">
+    <h2>Order</h2>
+    <div id="order-list"></div>
+    <div class="total" id="total"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Menu</title>
+  <script src="rj_script.js"></script>
+  <link rel="stylesheet" href="rj_style.css">
+</head>
+<body>
+    <header>
+        <h1>Chinese</h1>
+    </header>
+
+  
+  <div id="menu">
+    <div class="menu-item">
+      <span>Spring Rolls</span>
+      <span>$5.99</span>
+      <button onclick="addItem('Spring Rolls', 5.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+      <span>Sweet and Sour Chicken</span>
+      <span>$10.99</span>
+      <button onclick="addItem('Sweet and Sour Chicken', 10.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+      <span>Beef with Broccoli</span>
+      <span>$12.99</span>
+      <button onclick="addItem('Beef with Broccoli', 12.99)">Add</button>
+    </div>
+    
+    <div class="menu-item">
+        <span>Kung Pao Chicken</span>
+        <span>$11.99</span>
+        <button onclick="addItem('Kung Pao Chicken', 11.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>General Tso's Chicken</span>
+        <span>$13.99</span>
+        <button onclick="addItem('General Tso\'s Chicken', 13.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Mongolian Beef</span>
+        <span>$14.99</span>
+        <button onclick="addItem('Mongolian Beef', 14.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Shrimp Fried Rice</span>
+        <span>$9.99</span>
+        <button onclick="addItem('Shrimp Fried Rice', 9.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Mapo Tofu</span>
+        <span>$8.99</span>
+        <button onclick="addItem('Mapo Tofu', 8.99)">Add</button>
+      </div>
+      
+      <div class="menu-item">
+        <span>Szechuan Pork</span>
+        <span>$10.99</span>
+        <button onclick="addItem('Szechuan Pork', 10.99)">Add</button>
+      </div>
+  </div>
+  
+  <div class="order">
+    <h2>Order</h2>
+    <div id="order-list"></div>
+    <div class="total" id="total"></div>
+  </div>
+</body>
+</html>

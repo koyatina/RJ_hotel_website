@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Successful</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 50px;
+      font-family: Arial, sans-serif;
+      background-color: #f5deb3;
+    }
+  
+    
+    h1 {
+      color: #008000;
+    }
+    
+    p {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body><div>
+  <h1>Payment Successful</h1>
+  
+  <p>Thank you for your payment. Your unique customer ID is: <span id="customerId"></span></p>
+  
+  <h2>Booking Details</h2>
+  <p>Room Type: <span id="roomType"></span></p>
+  <p>Number of People: <span id="numPeople"></span></p>
+  <p>Check-In Date: <span id="checkIn"></span></p>
+  <p>Check-Out Date: <span id="checkOut"></span></p></div>
+  
+  <script>
+    // Retrieve booking details from the previous page using JavaScript or any server-side language
+    
+    // Dummy data for demonstration purposes
+    var bookingDetails = {
+      roomType:'Standard',
+      numPeople: 2,
+      checkIn: '2023-05-20',
+      checkOut: '2023-05-25'
+    };
+    
+    // Display booking details on the page
+    document.getElementById('roomType').textContent = bookingDetails.roomType;
+    document.getElementById('numPeople').textContent = bookingDetails.numPeople;
+    document.getElementById('checkIn').textContent = bookingDetails.checkIn;
+    document.getElementById('checkOut').textContent = bookingDetails.checkOut;
+    
+    // Generate and display a unique customer ID
+    var customerId = generateCustomerId();
+    document.getElementById('customerId').textContent = customerId;
+    
+    // Generate a random alphanumeric customer ID
+    function generateCustomerId() {
+      var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var customerId = '';
+      for (var i = 0; i < 8; i++) {
+        customerId += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return customerId;
+    }
+  </script>
+</body>
+</html>
